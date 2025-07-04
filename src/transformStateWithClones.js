@@ -29,7 +29,7 @@ function transformStateWithClones(state, actions) {
       }
     }
 
-    result.push(currentState);
+    result.push({ ...currentState });
   }
 
   return result;
